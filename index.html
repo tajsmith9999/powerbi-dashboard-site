@@ -12,18 +12,21 @@
             background-color: #f4f4f4;
             color: #333;
         }
+
         header, .footer, nav {
             background-color: #0078D7;
             color: white;
             text-align: center;
             padding: 15px;
         }
+
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
+
         .container {
             width: 80%;
             margin: 20px auto;
@@ -32,24 +35,29 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
+
         h2, h3 {
             text-align: center;
             color: #0078D7;
         }
+
         .dashboard {
             text-align: center;
             margin: 20px 0;
         }
+
         iframe {
             width: 100%;
             height: 600px;
             border: none;
         }
+
         .footer {
             position: relative;
             bottom: 0;
             width: 100%;
         }
+
         button.toggle {
             position: fixed;
             top: 10px;
@@ -61,16 +69,50 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
+        /* Dark Mode Styling */
         .dark-mode {
             background-color: #1e1e1e;
             color: #f4f4f4;
         }
+
         .dark-mode .container {
-            background: #2c2c2c;
+            background-color: #2c2c2c;
         }
-        .dark-mode .footer, .dark-mode header, .dark-mode nav {
+
+        .dark-mode header,
+        .dark-mode nav,
+        .dark-mode .footer {
             background-color: #444;
             color: white;
+        }
+
+        .dark-mode h1,
+        .dark-mode h2,
+        .dark-mode h3,
+        .dark-mode h4,
+        .dark-mode h5,
+        .dark-mode h6,
+        .dark-mode p,
+        .dark-mode label {
+            color: #f4f4f4;
+        }
+
+        .dark-mode input,
+        .dark-mode textarea {
+            background-color: #333;
+            color: #f4f4f4;
+            border: 1px solid #888;
+        }
+
+        .dark-mode button {
+            background-color: #555;
+            color: white;
+        }
+
+        .dark-mode div[style*="background: #f9f9f9"] {
+            background-color: #333 !important;
+            color: #f4f4f4 !important;
         }
     </style>
 </head>
@@ -105,48 +147,44 @@
 
     <section id="about" class="container">
         <h3>About This Dashboard</h3>
-        <p>This Power BI dashboard analyzes key metrics related to business operations, focusing on visualizing patterns and trends in real-time. It supports teams in making data-informed decisions using secure and interactive visual tools.</p>
+        <p>This research examines the potential consequences of the Trump administration’s decision to pause federal financial assistance to Historically Black Colleges and Universities (HBCUs). It analyzes the effects of this pause on various forms of aid, including grants, loans, and institutional support, with a particular focus on the financial stability of HBCU students who heavily rely on federal aid. Given that many undergraduates at HBCUs depend on such funding, this study aims to provide timely, accessible, and data-driven insights to inform policy discussions and support institutional planning.
+
+        The Power BI dashboard is designed to assist non-technical users in analyzing key metrics related to business operations, emphasizing real-time visualization of patterns and trends. It enables teams to make data-informed decisions using secure and interactive visual tools.</p>
     </section>
 
-   <section class="container">
-    <h3>Meet the Team</h3>
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
+    <section class="container">
+        <h3>Meet the Team</h3>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
 
-        <!-- Ogechi Onyekwere -->
-        <div style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-            <h4 style="color: #0078D7;">Ogechi Onyekwere</h4>
-            <p><strong>Role:</strong> Research & Integration</p>
-            <p><strong>Task:</strong>  connecting Dashboard to website</p>
-            
+            <!-- Ogechi Onyekwere -->
+            <div style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h4 style="color: #0078D7;">Ogechi Onyekwere</h4>
+                <p><strong>Role:</strong> Research & Integration</p>
+                <p><strong>Task:</strong> Research - relevant data to be used to develop trends. Integrate - and connect the dashboard to website</p>
+            </div>
+
+            <!-- Miles Griswold -->
+            <div style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h4 style="color: #0078D7;">Miles Griswold</h4>
+                <p><strong>Role:</strong> UI/UX & Website Enhancements</p>
+                <p><strong>Focus:</strong> Improving UI/UX design and enhancing the website by improving responsiveness and user experience</p>
+            </div>
+
+            <!-- Jordan Bertrand -->
+            <div style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h4 style="color: #0078D7;">Jordan Bertrand</h4>
+                <p><strong>Role:</strong> Security & Authentication</p>
+                <p><strong>Task:</strong> Implement security controls (authorization & authentication) using Microsoft authentication</p>
+            </div>
+
+            <!-- Anna Afoakwah & Taj Smith -->
+            <div style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h4 style="color: #0078D7;">Anna Afoakwah & Taj Smith</h4>
+                <p><strong>Role:</strong> Backend & Deployment</p>
+                <p><strong>Task:</strong> Create and develop a Power BI Dashboard to help non-technical users understand data, then deploy it to a GitHub website</p>
+            </div>
         </div>
-
-        <!-- Miles Griswold -->
-        <div style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-            <h4 style="color: #0078D7;">Miles Griswold</h4>
-            <p><strong>Role:</strong> UI/UX & Website Enhancements</p>
-            <p><strong>Focus:</strong> Improving design, responsiveness, and user experience</p>
-            
-        </div>
-
-        <!-- Jordan Bertrand -->
-        <div style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-            <h4 style="color: #0078D7;">Jordan Bertrand</h4>
-            <p><strong>Role:</strong> Security & Authentication</p>
-            <p><strong>Task:</strong> Implement security controls (Authorization & Authentication)</p>
-            
-        </div>
-
-        <!-- Anna Afoakwah & Taj Smith -->
-        <div style="flex: 1 1 300px; background: #f9f9f9; border-radius: 10px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-            <h4 style="color: #0078D7;">Anna Afoakwah & Taj Smith</h4>
-            <p><strong>Role:</strong> Backend & Deployment</p>
-            <p><strong>Task:</strong> Connect Power BI to the GitHub website and deploy</p>
-            
-        </div>
-
-    </div>
-</section>
-
+    </section>
 
     <section id="contact" class="container">
         <h3>Contact Us</h3>
